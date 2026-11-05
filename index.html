@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi web personal</title>
+<style>
+html {
+    scroll-behavior: smooth; 
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.encabezado { 
+    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    color: white;
+    padding: 30px 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+
+.menu { 
+    background: #1f2937; 
+    color: white;
+    padding: 15px; 
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 8px;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contenido { 
+    display: flex; 
+    gap: 20px; 
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.columna-izq {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+
+.columna-der {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+}
+
+.tarjeta {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-2px);
+}
+
+.tarjeta h2 {
+    margin-top: 0;
+    font-size: 22px;
+    border-bottom: 2px solid rgba(0,0,0,0.08);
+    padding-bottom: 8px;
+}
+
+.biografia { 
+    background: #ffffff; 
+    
+} 
+
+.musica { 
+    background: #ffffff; 
+    
+}
+
+.foto { 
+    background: #ffffff; 
+    
+}
+
+.video { 
+    background: #ffffff; 
+    
+}
+
+.tarjeta audio,
+.tarjeta video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.pie { 
+    background: #1f2937; 
+    color: white;
+    padding: 25px; 
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+.pie a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.pie a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<div class="encabezado">
+    <h1>Yeremy Alexander Cuyabazo Morales</h1>
+</div>
+
+<div class="menu">
+    <a href="#biografia">Biografía</a> | 
+    <a href="#foto">Foto</a> | 
+    <a href="#video">Video</a> | 
+    <a href="#musica">Música</a> | 
+    <a href="#contacto">Contacto</a>
+</div>
+
+<div class="contenido">
+
+    <div class="columna-izq">
+        
+       
+        <div class="tarjeta biografia" id="biografia">
+            <h2>Biografía</h2>
+            <p>Hola, Soy Yeremy Alexander Cuyabazo Morales.</p>
+            <p>Tengo 19 años, soy orgullosamente de la parroquia La Unión (Babahoyo, Los Ríos) y actualmente estoy cursando el tercer semestre de Ingeniería en Sistemas. Me apasiona el mundo de la tecnología, el desarrollo web y descubrir cómo la programación puede transformar ideas en realidades digitales.</p>
+            <p>Fuera de las aulas y frente a la pantalla, tengo otra gran pasión: el fútbol. Creo firmemente que la estrategia, el trabajo en equipo y la constancia que se necesitan en la cancha son muy similares a los que aplico cada día cuando escribo código y enfrento nuevos retos académicos.</p>
+            <p>Bienvenido a mi espacio web, donde comparto un poco de mis raíces, de lo que soy y de lo que voy aprendiendo en este camino</p>
+        </div>
+
+        
+        <div class="tarjeta musica" id="musica">
+            <h2>Mi música favorita</h2>
+            <p>Una canción que me gusta escuchar:</p>
+            <p>Gianluca Grignani - Mi Historia Entre Tus Dedos</p>
+            <audio controls>
+                <source src="C:\Users\jerem\Downloads\Gianluca Grignani - Mi Historia Entre Tus Dedos (HD).mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+            <p>La Mosca tse tse - Para No Verte Más</p>
+            <audio controls>
+                <source src="C:\Users\jerem\Downloads\Para No Verte Más.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+            <p>Eros Ramazzotti - Otra Como Tu</p>
+            <audio controls>
+                <source src="C:\Users\jerem\Downloads\Otra Como Tu.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </div>
+
+    </div>
+
+    
+    <div class="columna-der">
+
+     
+        <div class="tarjeta foto" id="foto">
+            <h2>Foto</h2>
+            <div class="foto-container">
+                <img src="https://i.ibb.co/1Gvpnp82/Whats-App-Image-2026-11-04-at-8-58-16-PM.jpg" alt="Mi foto" class="mi-foto" style="width: 50%; height: auto; border-radius: 12px;">
+                <img src="https://i.ibb.co/N6G2R3Wh/mi-foto-jpg.jpg" alt="Mi foto" class="mi-foto" style="width: 50%; height: auto; border-radius: 12px;">
+            </div>
+        </div>
+
+
+        <div class="tarjeta video" id="video">
+            <h2>Mi video</h2>
+            <video controls>
+                <source src="C:\Users\jerem\Downloads\tsk_4a64a5c07344186b3cac1ebe4c1b9dd5.mp4" type="video/mp4" alt="Mi video" style="width: 100%; height: auto; border-radius: 12px;">
+                Tu navegador no soporta video.
+            </video>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PIE DE PAGINA / CONTACTO -->
+<div class="pie" id="contacto">
+    <h3>Redes Sociales</h3>
+    <p>
+        <a href="https://www.facebook.com/jamc.cm.7" target="_blank">Facebook</a>
+        |
+        <a href="mailto:yeremycuyabazo@gmail.com" target="_blank">Correo</a>
+        
+    </p>
+    <p>
+        © 2026 - Yeremy Alexander Cuyabazo Morales
+    </p>
+</div>
+
+</body>
+</html>
